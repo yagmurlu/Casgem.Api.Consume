@@ -1,0 +1,28 @@
+﻿@model List<Casgem.Api.Consume1.Dtos.CustomerDtos.ResultCustomerDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Müşteri Listesi</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Müşteri Adı</th>
+        <th>Şehir</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+            <tr>
+                <td>@item.CustomerId</td>
+                <td>@item.Name</td>
+                <td>@item.City</td>
+                <td><a href="/Customer/DeleteCustomer/@item.CustomerId" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Customer/UpdateCustomer/@item.CustomerId" class="btn btn-outline-success">Güncelle</a></td>
+            </tr>
+    }
+</table>
+<a href="/Customer/AddCustomer" class="btn btn-outline-primary">Yeni Müşteri</a>

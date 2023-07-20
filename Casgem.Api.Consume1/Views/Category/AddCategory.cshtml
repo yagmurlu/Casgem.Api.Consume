@@ -1,0 +1,14 @@
+﻿@model Casgem.Api.Consume1.Dtos.CategoryDtos.CreateCategoryDto
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Kategori Ekleme Sayfası</h1>
+
+<form method="post">
+    <label>Kategori Adı</label>
+    <input type="text" class="form-control border" style="background-color:darkslategray" asp-for="CategoryName" />
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>

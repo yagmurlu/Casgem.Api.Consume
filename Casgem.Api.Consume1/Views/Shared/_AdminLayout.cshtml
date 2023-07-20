@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="~/bootstrap-sidebar-06/sidebar-06/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="d-flex align-items-stretch">
+        <nav id="sidebar" class="img" style="background-image: url(images/bg_1.jpg);">
+            <div class="p-4">
+                <h1><a href="index.html" class="logo">Travel <span>Travel Agency</span></a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-user mr-3"></span> About</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-plane mr-3"></span> Destination</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-cogs mr-3"></span> Services</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contacts</a>
+                    </li>
+                </ul>
+
+                <div class="mb-5">
+                    <h3 class="h6 mb-3">Subscribe for newsletter</h3>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group d-flex">
+                            <div class="icon"><span class="icon-paper-plane"></span></div>
+                            <input type="text" class="form-control" placeholder="Enter Email Address">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer">
+                    <p>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                    </p>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <h2 class="mb-4">Sidebar #06</h2>
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="~/bootstrap-sidebar-06/sidebar-06/js/bootstrap.min.js"></script>
+    <script src="~/bootstrap-sidebar-06/sidebar-06/js/jquery.min.js"></script>
+    <script src="~/bootstrap-sidebar-06/sidebar-06/js/main.js"></script>
+    <script src="~/bootstrap-sidebar-06/sidebar-06/js/popper.js"></script>
+
+</body>
+</html>
